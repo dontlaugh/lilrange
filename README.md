@@ -18,11 +18,13 @@ to a the `Within` method.
 
 ```go
 // get a lilrange.Range
-range, _ := lilrange.Parse("0130-0230")
+r, _ := lilrange.Parse("0130-0230")
+
 // get the current time with Go's time package
 now := time.Now()
+
 // Are we within the Range?
-if range.Within(now) {
+if r.Within(now) {
     fmt.Println("We are inside the range")
 }
 ```
