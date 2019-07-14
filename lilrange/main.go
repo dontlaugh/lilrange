@@ -20,9 +20,9 @@ func main() {
 	}
 	now := time.Now().In(time.UTC)
 
-	fmt.Printf("now:                 %v\n", now)
-	fmt.Printf("start:               %v\n", r.Start)
-	fmt.Printf("end:                 %v\n", r.End)
-	fmt.Printf("duration:            %v\n", r.Duration)
-	fmt.Printf("within range now?:   %v\n", r.Within(now))
+	fmt.Printf("now (nano precision): %v\n", now)
+	fmt.Printf("start:                %v\n", r.Start)
+	fmt.Printf("end:                  %v\n", r.End)
+	fmt.Printf("duration:             %v\n", r.Duration)
+	fmt.Printf("within range now?:    %v\n", r.Within(now))
 }
