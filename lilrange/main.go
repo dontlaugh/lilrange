@@ -30,5 +30,5 @@ func main() {
 	fmt.Printf("next start:           %v\n", next.Start)
 	fmt.Printf("next end:             %v\n", next.End)
 	fmt.Printf("duration (same):      %v\n", next.Duration)
-	fmt.Printf("until next start:     %v\n", time.Until(next.Start))
+	fmt.Printf("until next start:     %v\n", time.Until(next.Start).Truncate(time.Second))
 }
