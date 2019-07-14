@@ -29,7 +29,18 @@ if r.Within(now) {
 }
 ```
 
+## Test Program
 
+A test program can be compiled from the *lilrange* sub directory, or use `go install`
+if `$GOPATH/bin` is on your PATH.
 
+```
+go install -u github.com/dontlaugh/lilrange/lilrange
+```
 
+Give it a lilrange string to test the behavior.
+
+```
+lilrange 0415-0445
+```
 
