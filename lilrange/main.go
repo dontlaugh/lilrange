@@ -18,8 +18,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("start:      %v\n", r.Start)
-	fmt.Printf("end:        %v\n", r.End)
-	fmt.Printf("duration:   %v\n", r.Duration)
+	fmt.Printf("start:               %v\n", r.Start)
+	fmt.Printf("end:                 %v\n", r.End)
+	fmt.Printf("duration:            %v\n", r.Duration)
 	fmt.Printf("within range now?:   %v\n", r.Within(time.Now()))
 }
