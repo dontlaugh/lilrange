@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	now := time.Now()
+	now := time.Now().In(time.UTC)
 
 	fmt.Printf("now:                 %v\n", now)
 	fmt.Printf("start:               %v\n", r.Start)

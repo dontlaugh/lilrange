@@ -45,7 +45,7 @@ func Parse(s string) (*Range, error) {
 	// 0. determine duration
 	dur, _ := CalculateDurationMinutes(startHr, startMin, endHr, endMin)
 	// 1. determine if "today's start" has happened
-	now := time.Now()
+	now := time.Now().In(time.UTC)
 	nowYear, nowMonth, nowDate := now.Date()
 	todaysStart := time.Date(nowYear, nowMonth, nowDate, startHr, startMin, 0, 0, time.UTC)
 	endTime := todaysStart.Add(time.Minute * time.Duration(dur))
