@@ -25,4 +25,10 @@ func main() {
 	fmt.Printf("end:                  %v\n", r.End)
 	fmt.Printf("duration:             %v\n", r.Duration)
 	fmt.Printf("within range now?:    %v\n", r.Within(now))
+	fmt.Println("\nThe next range's values")
+	next := r.Next()
+	fmt.Printf("next start:           %v\n", next.Start)
+	fmt.Printf("next end:             %v\n", next.End)
+	fmt.Printf("duration (same):      %v\n", next.Duration)
+	fmt.Printf("until next start:     %v\n", time.Until(next.Start))
 }
