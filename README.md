@@ -14,7 +14,7 @@ The returned range's `End` time is guaranteed to be in the future. The `Start`
 time could be in the past, or the future.
 
 To determine if your current system time is inside the range, pass a `time.Time`
-to a the `Within` method. 
+to the `Within` method. 
 
 ```go
 // get a lilrange.Range
